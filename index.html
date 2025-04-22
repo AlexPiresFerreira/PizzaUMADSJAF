@@ -3,66 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio de Pizzas - Monte Sinai</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ff4d4d;
-            color: #fff;
-        }
-        .card {
-            background-color: #fff;
-            color: #333;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card-header {
-            background-color: #d32f2f;
-            color: white;
-            text-align: center;
-            font-size: 1.5em;
-        }
-        .card-body {
-            padding: 1.5em;
-        }
-        .price {
-            color: #e64a19;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-    </style>
+    <title>Cardápio de Pizzas - UMADSJAF</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-header">
-                Cardápio de Pizzas 🍕 Monte Sinai
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>Muçarela</h5>
-                        <p>Muçarela, tomate e orégano.</p>
-                        <p class="price">R$ 38,50</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Calabresa</h5>
-                        <p>Calabresa fatiada, cebola e azeitonas pretas.</p>
-                        <p class="price">R$ 38,50</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Frango</h5>
-                        <p>Frango desfiado e catupiry, com milho e orégano.</p>
-                        <p class="price">R$ 38,50</p>
-                    </div>
-                    <!-- Continue adicionando mais colunas para cada pizza -->
+    <header class="header">
+        <h1>Cardápio de Pizzas 🍕 UMADSJAF</h1>
+        <p>Venda de Pizzas - 07/06/2025</p>
+        <p>Entrega em cada congregação</p>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <!-- Muçarela -->
+            <div class="pizza-card">
+                <img src="https://via.placeholder.com/300" alt="Muçarela">
+                <div class="pizza-card-body">
+                    <h3>Muçarela</h3>
+                    <p>Muçarela, molho de tomate, orégano e azeitonas.</p>
+                    <p class="price">R$ 38,50</p>
                 </div>
             </div>
+            <!-- Calabresa -->
+            <div class="pizza-card">
+                <img src="https://via.placeholder.com/300" alt="Calabresa">
+                <div class="pizza-card-body">
+                    <h3>Calabresa</h3>
+                    <p>Muçarela, calabresa, molho de tomate, orégano e azeitonas.</p>
+                    <p class="price">R$ 38,50</p>
+                </div>
+            </div>
+            <!-- Milho com Requeijão -->
+            <div class="pizza-card">
+                <img src="https://via.placeholder.com/300" alt="Milho com Requeijão">
+                <div class="pizza-card-body">
+                    <h3>Milho com Requeijão</h3>
+                    <p>Muçarela, milho, requeijão, orégano e azeitonas.</p>
+                    <p class="price">R$ 38,50</p>
+                </div>
+            </div>
+            <!-- Continue adicionando os outros sabores de pizza aqui -->
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Grupo de Jovens UMADSJAF | Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
+Arquivo styles.css
+css
+Copiar
+
+body {
+    background-color: #ff4d4d;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #d32f2f;
+    text-align: center;
+    padding: 2em;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.pizza-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    width: 300px;
+    overflow: hidden;
+}
+
+.pizza-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ffa726;
+}
+
+.pizza-card-body {
+    padding: 1em;
+    text-align: center;
+}
+
+.price {
+    color: #e64a19;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.footer {
+    background-color: #d32f2f;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
